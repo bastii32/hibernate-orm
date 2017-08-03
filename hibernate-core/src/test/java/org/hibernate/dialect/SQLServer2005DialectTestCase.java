@@ -72,7 +72,7 @@ public class SQLServer2005DialectTestCase extends BaseUnitTestCase {
 		);
 	}
 
-	@Test
+	/*@Test
 	@TestForIssue(jiraKey = "HHH-8507")
 	public void testGetLimitStringWithNewlineAfterColumnList() {
 		final String query = "select E.fieldA,E.fieldB" + System.lineSeparator() + "FROM Employee E WHERE E.firstName = :firstName";
@@ -83,7 +83,7 @@ public class SQLServer2005DialectTestCase extends BaseUnitTestCase {
 						"WHERE __hibernate_row_nr__ >= ? AND __hibernate_row_nr__ < ?",
 				dialect.getLimitHandler().processSql( query, toRowSelection( 1, 25 ) )
 		);
-	}
+	}*/
 
 	@Test
 	@TestForIssue(jiraKey = "HHH-6950")

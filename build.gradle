@@ -261,8 +261,8 @@ subprojects { subProject ->
 
 	eclipse {
 		jdt {
-			sourceCompatibility = javaTarget.version
-			targetCompatibility = javaTarget.version
+			sourceCompatibility = '1.8'
+			targetCompatibility = '1.8'
 		}
 		classpath {
 			plusConfigurations.add( configurations.provided )

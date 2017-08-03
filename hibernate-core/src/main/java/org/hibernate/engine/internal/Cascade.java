@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 
+import org.hibernate.Hibernate;
 import org.hibernate.HibernateException;
 import org.hibernate.bytecode.enhance.spi.LazyPropertyInitializer;
 import org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor;
@@ -132,7 +133,23 @@ public final class Cascade {
 					else {
 						child = persister.getPropertyValue( parent, i );
 					}
+					
+                    // HIS Patch START
 
+                    /*
+                     * Avoid Initialization of 'soft' Lazy Associations (without instrumentation)
+                     * see https://hiszilla.his.de/hiszilla/show_bug.cgi?id=88859
+                     */
+                    if (!action.performOnLazyProperty()) {
+                    	boolean needsCascade = Hibernate.isInitialized(child) || (child instanceof PersistentCollection && ((PersistentCollection) child).hasQueuedOperations());
+                        if (!needsCascade) {
+                            //do nothing to avoid a lazy property initialization
+                            continue;
+                        }
+                    }
+
+                    // HIS Patch END
+                    
 					cascadeProperty(
 							action,
 							cascadePoint,

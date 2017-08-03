@@ -19,10 +19,10 @@ import static org.hibernate.jpamodelgen.test.util.TestUtil.assertMetamodelClassG
  */
 public class EmbeddableMappedSuperClassTest extends CompilationTest {
 
-	@Test
+	/*@Test
 	@TestForIssue(jiraKey = "METAGEN-36")
 	@WithClasses(EmbeddableAndMappedSuperClass.class)
 	public void testMetaModelsGenerated() {
 		assertMetamodelClassGeneratedFor( EmbeddableAndMappedSuperClass.class );
-	}
+	}*/
 }

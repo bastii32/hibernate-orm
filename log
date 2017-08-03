@@ -1,0 +1,140 @@
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+Configuration(s) specified but the install task does not exist in project :release.
+:hibernate-core:generateGrammarSource UP-TO-DATE
+:hibernate-core:xjc UP-TO-DATE
+:hibernate-core:compileJava
+:hibernate-core:processResources UP-TO-DATE
+:hibernate-core:classes
+:hibernate-core:jar UP-TO-DATE
+:hibernate-jpamodelgen:jaxb UP-TO-DATE
+:hibernate-jpamodelgen:xjc SKIPPED
+:hibernate-jpamodelgen:compileJava UP-TO-DATE
+:hibernate-jpamodelgen:processResources UP-TO-DATE
+:hibernate-jpamodelgen:classes UP-TO-DATE
+:hibernate-jpamodelgen:jar UP-TO-DATE
+:documentation:compileJava UP-TO-DATE
+:documentation:processResources UP-TO-DATE
+:documentation:classes UP-TO-DATE
+:documentation:jar UP-TO-DATE
+:documentation:assemble UP-TO-DATE
+:hibernate-core:generateTestGrammarSource UP-TO-DATE
+:hibernate-testing:compileJava UP-TO-DATE
+:hibernate-testing:processResources UP-TO-DATE
+:hibernate-testing:classes UP-TO-DATE
+:hibernate-testing:jar UP-TO-DATE
+:hibernate-core:compileTestJava UP-TO-DATE
+:hibernate-core:copyBundleResources UP-TO-DATE
+:hibernate-core:processTestResources UP-TO-DATE
+:hibernate-core:testClasses UP-TO-DATE
+:hibernate-core:testJar UP-TO-DATE
+:hibernate-ehcache:compileJava UP-TO-DATE
+:hibernate-ehcache:processResources UP-TO-DATE
+:hibernate-ehcache:classes UP-TO-DATE
+:hibernate-ehcache:jar UP-TO-DATE
+:hibernate-envers:compileJava UP-TO-DATE
+:hibernate-envers:processResources UP-TO-DATE
+:hibernate-envers:classes UP-TO-DATE
+:hibernate-envers:jar UP-TO-DATE
+:hibernate-spatial:compileJava UP-TO-DATE
+:hibernate-spatial:processResources UP-TO-DATE
+:hibernate-spatial:classes UP-TO-DATE
+:hibernate-spatial:jar UP-TO-DATE
+:documentation:compileTestJava UP-TO-DATE
+:documentation:processTestResources UP-TO-DATE
+:documentation:testClasses UP-TO-DATE
+:documentation:test UP-TO-DATE
+:documentation:check UP-TO-DATE
+:documentation:build UP-TO-DATE
+:hibernate-c3p0:compileJava UP-TO-DATE
+:hibernate-c3p0:processResources UP-TO-DATE
+:hibernate-c3p0:classes UP-TO-DATE
+:hibernate-c3p0:jar UP-TO-DATE
+:hibernate-c3p0:assemble UP-TO-DATE
+:hibernate-c3p0:checkstyleMain UP-TO-DATE
+:hibernate-c3p0:findbugsMain UP-TO-DATE
+:hibernate-c3p0:compileTestJava UP-TO-DATE
+:hibernate-c3p0:processTestResources UP-TO-DATE
+:hibernate-c3p0:testClasses UP-TO-DATE
+:hibernate-c3p0:findbugsTest UP-TO-DATE
+:hibernate-c3p0:test UP-TO-DATE
+:hibernate-c3p0:buildDashboard UP-TO-DATE
+:hibernate-c3p0:check UP-TO-DATE
+:hibernate-c3p0:build UP-TO-DATE
+:hibernate-core:assemble UP-TO-DATE
+:hibernate-core:checkstyleMain
+:hibernate-core:findbugsMain
+FindBugs rule violations were found. See the report at: file:///C:/hibernate-orm/hibernate-core/target/reports/findbugs/main.xml
+:hibernate-core:findbugsTest
+FindBugs rule violations were found. See the report at: file:///C:/hibernate-orm/hibernate-core/target/reports/findbugs/test.xml
+:hibernate-infinispan:compileJava
+:hibernate-infinispan:processResources
+:hibernate-infinispan:classes
+:hibernate-infinispan:jar
+:hibernate-infinispan:compileTestJava
+:hibernate-infinispan:processTestResources
+:hibernate-infinispan:testClasses
+:hibernate-infinispan:packageTests
+:hibernate-infinispan:sourcesTestJar
+:hibernate-orm-modules:copyAndExpandModuleXml
+:hibernate-orm-modules:createModulesZip
+:hibernate-orm-modules:installWildFly
+:hibernate-orm-modules:installHibernateModule
+:hibernate-orm-modules:prepareWildFlyForTests
+:hibernate-core:test
+
+org.hibernate.test.inheritancediscriminator.embeddable.JoinedSubclassWithEmbeddableTest > testSelectFromEmbeddedField FAILED
+    java.lang.NoSuchMethodError at JoinedSubclassWithEmbeddableTest.java:53
+
+org.hibernate.test.inheritancediscriminator.embeddable.JoinedSubclassWithEmbeddableTest > testSelectFromParent FAILED
+    java.lang.NoSuchMethodError at JoinedSubclassWithEmbeddableTest.java:71
+
+org.hibernate.test.inheritancediscriminator.embeddable.JoinedSubclassWithEmbeddableTest > testSelectFromSubclass FAILED
+    java.lang.NoSuchMethodError at JoinedSubclassWithEmbeddableTest.java:62
+
+org.hibernate.test.inheritancediscriminator.embeddable.SingleTableWithEmbeddableTest > testSelectFromEmbeddedField FAILED
+    java.lang.NoSuchMethodError at SingleTableWithEmbeddableTest.java:54
+
+org.hibernate.test.inheritancediscriminator.embeddable.SingleTableWithEmbeddableTest > testSelectFromParent FAILED
+    java.lang.NoSuchMethodError at SingleTableWithEmbeddableTest.java:72
+
+org.hibernate.test.inheritancediscriminator.embeddable.SingleTableWithEmbeddableTest > testSelectFromSubclass FAILED
+    java.lang.NoSuchMethodError at SingleTableWithEmbeddableTest.java:63
+
+org.hibernate.test.inheritancediscriminator.embeddable.TablePerClassWithEmbeddableTest > testSelectFromEmbeddedField FAILED
+    java.lang.NoSuchMethodError at TablePerClassWithEmbeddableTest.java:53
+
+org.hibernate.test.inheritancediscriminator.embeddable.TablePerClassWithEmbeddableTest > testSelectFromParent FAILED
+    java.lang.NoSuchMethodError at TablePerClassWithEmbeddableTest.java:71
+
+org.hibernate.test.inheritancediscriminator.embeddable.TablePerClassWithEmbeddableTest > testSelectFromSubclass FAILED
+    java.lang.NoSuchMethodError at TablePerClassWithEmbeddableTest.java:62
+
+org.hibernate.test.inheritancediscriminator.JoinedInheritanceTest > selectWhereTypeEqual FAILED
+    java.lang.NoSuchMethodError at JoinedInheritanceTest.java:60
+
+org.hibernate.test.inheritancediscriminator.JoinedInheritanceTest > simpleSelectTest FAILED
+    java.lang.NoSuchMethodError at JoinedInheritanceTest.java:48
+
+org.hibernate.test.inheritancediscriminator.joinedsubclass.JoinedSubclassTest > shouldNotRetrieveSubSubSubEntityWithHQL FAILED
+    java.lang.NoSuchMethodError at JoinedSubclassTest.java:132
+
+org.hibernate.test.inheritancediscriminator.joinedsubclass.JoinedSubclassTest > shouldRetrieveSubSubEntityWithHQL FAILED
+    java.lang.NoSuchMethodError at JoinedSubclassTest.java:117
+:hibernate-core:test FAILED
+:hibernate-core:buildDashboard
+
+BUILD FAILED
+
+Total time: 18 mins 8.786 secs
